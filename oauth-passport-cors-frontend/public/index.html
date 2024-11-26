@@ -1,0 +1,33 @@
+<script>
+    async function getMyRoute() {
+        const result = await fetch('http://localhost:3000/my-route', {
+            credentials: 'include',
+            headers: {
+                'Access-Control-Allow-Origin': 'http://localhost:3000'
+            }
+        })
+        console.log(await result.text())
+    }
+
+    async function logOut() {
+        const result = await fetch('http://localhost:3000/auth/logout', {
+            credentials: 'include',
+            headers: {
+                'Access-Control-Allow-Origin': 'http://localhost:3000'
+            }
+        })
+        console.log(await result.text())
+    }
+</script>
+
+<h1>Hello World</h1>
+
+<a href="http://localhost:3000/auth/google">Login with Google</a>
+
+<button onclick="getMyRoute()">
+    Test fetch
+</button>
+
+<button onclick="logOut()">
+    Log out
+</button>

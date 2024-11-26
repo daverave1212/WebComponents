@@ -1,0 +1,17 @@
+<script>
+    async function getMyRoute() {
+        const result = await fetch('http://localhost:3000/my-route', {
+            credentials: 'include',
+            headers: {
+                'Access-Control-Allow-Origin': 'http://localhost:3000'
+            }
+        })
+        console.log(await result.text())
+    }
+</script>
+
+<h1>Other</h1>
+
+<button onclick="getMyRoute()">
+    Test fetch
+</button>

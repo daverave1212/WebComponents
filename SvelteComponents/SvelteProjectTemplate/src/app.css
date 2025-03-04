@@ -1,0 +1,30 @@
+*, body {
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+    font-family: BaseFont;
+}
+
+nav a {
+    font-family: NormalRoboto;
+    font-weight: 400;
+}
+p {
+    font-family: NormalRoboto;
+    font-weight: 400;
+}
+h1, h2, h3, h4 {
+    font-family: HeroMuli;
+}
+.hero-title {
+    font-family: HeroMuli;
+}
+.hero-subtitle {
+    font-family: HeroMuli;
+}
+input, button, textarea {
+    font-family: NormalRoboto;
+    font-weight: 400;
+}

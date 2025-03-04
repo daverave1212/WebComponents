@@ -1,0 +1,1 @@
+Just paste these files over the default svelte files in the root folder.

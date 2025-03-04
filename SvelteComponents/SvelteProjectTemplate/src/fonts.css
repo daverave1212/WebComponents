@@ -1,0 +1,44 @@
+@font-face {
+    font-family: NormalSource;
+    src: url('fonts/SourceSans3/SourceSans3-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: NormalRaleway;
+    src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: NormalInter;
+    src: url('fonts/Inter/Inter-VariableFont_opsz.ttf');
+}
+
+@font-face {
+    font-family: NormalRoboto;
+    src: url('fonts/Roboto/Roboto-VariableFont_wdth.ttf');
+}
+
+@font-face {
+    font-family: NormalFira;
+    src: url('fonts/Fira/FiraSans-Medium.ttf');
+}
+
+/* Recommended for nav */
+@font-face {
+    font-family: RoundedNunito;
+    src: url('fonts/Nunito/Nunito-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: RoundedRubik;
+    src: url('fonts/Rubik/Rubik-VariableFont_wght.ttf');
+}
+
+/* Recommended for hero */
+@font-face {
+    font-family: HeroMuli;
+    src: url('fonts/Muli/Muli-ExtraBold.ttf');
+}
+
+
+

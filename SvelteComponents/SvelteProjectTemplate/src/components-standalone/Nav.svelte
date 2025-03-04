@@ -1,31 +1,54 @@
 
 <style>
     :root {
+        /* Landscape only */
         --base-nav-height: 70px;
+        --nav-padding-left: 3rem;
+        --nav-padding-right: 3rem;
+        --nav-flex-direction: row;
+
+        /* Mobile only */
+        --mobile-nav-padding: 3rem;
+        --nav-gap: 3rem;
+
+        /* Both (require adjustments for the media query below as well) */
+        --nav-bg-color: #333333;
+        --nav-color: white;
     }
+
+    @media (max-width: 768px) {
+        :root {
+            --nav-bg-color: white;
+            --nav-color: rgb(68, 68, 68);
+        }
+    }
+
+
     nav a {
         text-decoration: none;
         line-height: calc(var(--base-nav-height));
-
-        font-size: 1.25rem;
     }
     @media (orientation: landscape) {
         nav {
             width: 100%;
-            height: 70px;
+            height: var(--base-nav-height);
 
-            background-color: #333333;
-            padding-left: 3rem;
-            padding-right: 3rem;
+            background-color: var(--nav-bg-color);
+            padding-left: var(--nav-padding-left);
+            padding-right: var(--nav-padding-right);
+            display: flex;
+            flex-direction: row-reverse;
         }
         nav .landscape-only {
             width: 100%;
             height: 100%;
 
-            gap: 3rem;
+            display: flex;
+            flex-direction: var(--nav-flex-direction);
+            gap: var(--nav-gap);
         }
         nav a {
-            color: white;
+            color: var(--nav-color);
         }
     }
 
@@ -37,16 +60,14 @@
 
         .portrait-side-menu-content {
             width: 100%;
-            padding: 3rem;
-
-            font-size: 1.25rem;
+            padding: var(--mobile-nav-padding);
 
             display: flex;
             flex-direction: column;
         }
 
         nav a {
-            color: rgb(63, 63, 63);
+            color: var(--nav-color);
         }
     }
 
@@ -63,7 +84,7 @@
 </script>
 
 <nav>
-    <div class="landscape-only flex-content">
+    <div class="landscape-only">
         {#each options as {name, href}}
             <a href={href}>{name}</a>
         {/each}

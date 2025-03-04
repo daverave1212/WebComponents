@@ -5,11 +5,11 @@
         --base-nav-height: 70px;
         --nav-padding-left: 3rem;
         --nav-padding-right: 3rem;
+        --nav-gap: 5rem;
         --nav-flex-direction: row;
 
         /* Mobile only */
         --mobile-nav-padding: 3rem;
-        --nav-gap: 3rem;
 
         /* Both (require adjustments for the media query below as well) */
         --nav-bg-color: #333333;
